@@ -1,16 +1,29 @@
+import { HomePage } from 'pages/HomePage';
+import { LoginPage } from 'pages/LoginPage';
+import { MoviesPage } from 'pages/MoviesPage';
+import { SignUpPage } from 'pages/SingUpPage';
+import { Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { Layout } from './Layout/layout';
+
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+
+    <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+          <Route path='/' element={<Layout/>}>
+            <Route path='homepage' element={<HomePage />} />
+            <Route path='moviespage' element={<MoviesPage />} />
+            <Route path='loginpage' element={<LoginPage />} />
+            <Route path='signuppage' element={<SignUpPage />} />
+          </Route>          
+      </Routes>
+    </Suspense>
+    
+    </>
   );
 };
+
+
