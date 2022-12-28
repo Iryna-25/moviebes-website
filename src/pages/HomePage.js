@@ -13,8 +13,6 @@ export const HomePage = () => {
         });
     }, []);
 
-    console.log(movies);
-
     return (
         <HomePageContent movies={ movies } />
     )
