@@ -5,7 +5,7 @@ export const HomePageContent = ({ movies }) => {
     return (
         <section>
             <b>Place for slider</b>
-            <h1>Trending</h1>
+            <h1>Upcoming</h1>
             <Box as={"ul"} display="grid" gridTemplateColumns="repeat(auto-fit, minmax(250px, 1fr))" gridGap="1rem">
                 {movies.map(movie => (
                     <li key={movie.id} style={{listStyleType:'none'}}>

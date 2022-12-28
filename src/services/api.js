@@ -9,6 +9,12 @@ const BASE_URL = 'https://api.themoviedb.org/3';
 //     return axios.get(URL).then(response => response.data);
 // };
 
+export const getUpcomingMovies = () => {
+    const URL = `${BASE_URL}/movie/upcoming?api_key=${API_KEY}`;
+
+    return axios.get(URL).then(response => response.data);
+}
+
 export const getTrandingMovies = async () => {
     const URL = `${BASE_URL}/trending/movie/day?api_key=${API_KEY}`;
 

@@ -1,6 +1,6 @@
 import { HomePageContent } from "components/HomePageContent/HomePageContent";
 import { useEffect, useState } from "react";
-import { getTrandingMovies } from "services/api";
+import { getUpcomingMovies } from "services/api";
 
 
 export const HomePage = () => {
@@ -8,12 +8,12 @@ export const HomePage = () => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-        getTrandingMovies().then(response => {
-            setMovies(response.data.results);
+        getUpcomingMovies().then(data => {
+            setMovies(data.results);
         });
     }, []);
 
-    console.log(movies)
+    console.log(movies);
 
     return (
         <HomePageContent movies={ movies } />
