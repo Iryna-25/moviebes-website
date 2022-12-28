@@ -3,11 +3,30 @@ import axios from "axios";
 const API_KEY = '64d6e48eb0f228948a0484363da88192';
 const BASE_URL = 'https://api.themoviedb.org/3';
 
-export const getTrandingMovies = () => {
-    const URL = `${BASE_URL}/trending/movie/day?api_key=${API_KEY}`;
+// export const getTrandingMovies = () => {
+//     const URL = `${BASE_URL}/trending/movie/day?api_key=${API_KEY}`;
     
+//     return axios.get(URL).then(response => response.data);
+// };
+
+export const getUpcomingMovies = () => {
+    const URL = `${BASE_URL}/movie/upcoming?api_key=${API_KEY}`;
+
     return axios.get(URL).then(response => response.data);
+}
+
+export const getTrandingMovies = async () => {
+    const URL = `${BASE_URL}/trending/movie/day?api_key=${API_KEY}`;
+
+    try {
+        const response = await axios.get(URL);
+        return response;
+    } catch (error) {
+        console.log(error);
+    }
+
 };
+
 
 export const getMoviesByName = (name) => {
     const URL = `${BASE_URL}/search/movie?query=${name}&api_key=${API_KEY}&include_adult=false`;
