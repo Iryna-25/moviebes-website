@@ -1,10 +1,15 @@
 import { Box } from "components/Box";
 import { NavLink } from "react-router-dom";
+
+
+import Slider from '../Slider/Slider';
+import { SliderContainer } from '../Slider/Slider.style';
+
+
 export const HomePageContent = ({ movies }) => {
-    console.log(movies)
     return (
         <section>
-            <b>Place for slider</b>
+            <SliderContainer> <Slider slides={movies}/></SliderContainer> 
             <h1>Upcoming</h1>
             <Box as={"ul"} display="grid" gridTemplateColumns="repeat(auto-fit, minmax(250px, 1fr))" gridGap="1rem">
                 {movies.map(movie => (
