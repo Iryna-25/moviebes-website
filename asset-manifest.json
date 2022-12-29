@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/moviebes-website/static/css/main.b5320759.css",
-    "main.js": "/moviebes-website/static/js/main.042473ae.js",
+    "main.js": "/moviebes-website/static/js/main.4eb1084c.js",
     "index.html": "/moviebes-website/index.html",
     "main.b5320759.css.map": "/moviebes-website/static/css/main.b5320759.css.map",
-    "main.042473ae.js.map": "/moviebes-website/static/js/main.042473ae.js.map"
+    "main.4eb1084c.js.map": "/moviebes-website/static/js/main.4eb1084c.js.map"
   },
   "entrypoints": [
     "static/css/main.b5320759.css",
-    "static/js/main.042473ae.js"
+    "static/js/main.4eb1084c.js"
   ]
 }
