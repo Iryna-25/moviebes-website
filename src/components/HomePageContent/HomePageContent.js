@@ -2,14 +2,14 @@ import { Box } from "components/Box";
 import { NavLink } from "react-router-dom";
 
 
-import Slider from '../Slider/Slider';
-import { SliderContainer } from '../Slider/Slider.style';
+// import Slider from '../SliderSignUp/SliderSignUp';
+// import { SliderContainer } from '../SliderSignUp/SliderSignUp.style';
 
 
 export const HomePageContent = ({ movies }) => {
     return (
         <section>
-            <SliderContainer> <Slider slides={movies}/></SliderContainer> 
+            {/* <SliderContainer> <Slider slides={movies}/></SliderContainer>  */}
             <h1>Upcoming</h1>
             <Box as={"ul"} display="grid" gridTemplateColumns="repeat(auto-fit, minmax(250px, 1fr))" gridGap="1rem">
                 {movies.map(movie => (

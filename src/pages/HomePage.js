@@ -1,6 +1,7 @@
 import { HomePageContent } from "components/HomePageContent/HomePageContent";
 import { useEffect, useState } from "react";
 import { getUpcomingMovies } from "services/api";
+import SliderHome from "../components/SliderHome/SliderHome";
 
 
 export const HomePage = () => {
@@ -14,7 +15,10 @@ export const HomePage = () => {
     }, []);
 
     return (
+        <>
+        <SliderHome/>
         <HomePageContent movies={ movies } />
+        </>
     )
 };
 
