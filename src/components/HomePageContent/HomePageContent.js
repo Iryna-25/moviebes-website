@@ -13,7 +13,7 @@ export const HomePageContent = ({ movies }) => {
             <h1>Upcoming</h1>
             <Box as={"ul"} display="grid" gridTemplateColumns="repeat(auto-fit, minmax(250px, 1fr))" gridGap="1rem">
                 {movies.map(movie => (
-                    <li key={movie.id} style={{listStyleType:'none'}}>
+                    <li key={movie.id}>
                         <NavLink to={`/moviespage/${movie.id}`}>
                             <img 
                                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
