@@ -6,6 +6,7 @@ import { MovieReviewPage } from 'pages/MovieReviewPage';
 import { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from './Layout/layout';
+import { GlobalStyle } from './GlobalStyle';
 
 
 export const App = () => {
@@ -23,7 +24,7 @@ export const App = () => {
           </Route>          
       </Routes>
     </Suspense>
-    
+    <GlobalStyle/>
     </>
   );
 };
