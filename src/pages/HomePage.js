@@ -14,7 +14,7 @@ export const HomePage = () => {
 
     return (
         <>
-        <SliderHome/>
+        {/* <SliderHome/> */}
         <HomePageContent movies={ movies } />
         </>
     )
