@@ -1,11 +1,10 @@
 import { UpcomingList } from "components/UpcomingList/UpcomingList";
-// import Slider from '../SliderSignUp/SliderSignUp';
-// import { SliderContainer } from '../SliderSignUp/SliderSignUp.style';
+import SliderHome from "components/SliderHome/SliderHome";
 
 export const HomePageContent = ({ movies }) => {
     return (
         <section>
-            {/* <SliderContainer> <Slider slides={movies}/></SliderContainer>  */}
+            <SliderHome/>
             <UpcomingList movies={movies} />
         </section>
     );

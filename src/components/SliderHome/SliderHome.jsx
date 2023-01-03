@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
-import "../SliderHome/SliderHome.css";
+import { ArrowNext, ArrowPrev, Wrapper, SlideImg } from "./SliderHome.style";
 import { getTrandingMovies } from "services/api";
+import { Box } from "components/Box";
 
-
-function SliderHome() {
+function SliderHome () {
 
   const [trandingImg, setTrandingImg] = useState([]);
 
@@ -18,17 +18,17 @@ function SliderHome() {
 
   const NextArrow = ({ onClick }) => {
     return (
-      <div className="arrow next" onClick={onClick}>
+      <ArrowNext onClick={onClick}>
         <FaArrowRight />
-      </div>
+      </ArrowNext>
     );
   };
 
   const PrevArrow = ({ onClick }) => {
     return (
-      <div className="arrow prev" onClick={onClick}>
+      <ArrowPrev onClick={onClick}>
         <FaArrowLeft />
-      </div>
+      </ArrowPrev>
     );
   };
 
@@ -47,16 +47,19 @@ function SliderHome() {
   };
 
   return (
-    <div className="A">
+    <Box display='grid' gridTemplateColumns="repeat(auto-fit, minmax(250px, 1fr))" gridGap="1rem">
+      <Wrapper>
       <Slider {...settings}>
         {trandingImg.map((img, idx) => (
-          <div key={img.id} className={idx === imageIndex ? "slide activeSlide" : "slide"}>
-            <img src={`https://image.tmdb.org/t/p/w500${img.backdrop_path}`} alt={img} />
+          <div key={img.id} 
+          >
+            {idx === imageIndex}
+            <SlideImg src={`https://image.tmdb.org/t/p/w500${img.backdrop_path}`} alt={img} />
           </div>
         ))}
       </Slider>
-    </div>
+    </Wrapper>
+    </Box>
   );
 }
-
 export default SliderHome;
