@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
-import { ArrowNext, ArrowPrev, Wrapper, SlideImg } from "./SliderHome.style";
+import { ArrowNext, ArrowPrev, Wrapper, SlideImg, Slide } from "./SliderHome.style";
 import { getTrandingMovies } from "services/api";
 import { Box } from "components/Box";
 
@@ -51,11 +51,12 @@ function SliderHome () {
       <Wrapper>
       <Slider {...settings}>
         {trandingImg.map((img, idx) => (
-          <div key={img.id} 
-          >
-            {idx === imageIndex}
+          <Slide 
+          key={img.id} 
+          active={idx === imageIndex ?? true}
+          > 
             <SlideImg src={`https://image.tmdb.org/t/p/w500${img.backdrop_path}`} alt={img} />
-          </div>
+          </Slide>
         ))}
       </Slider>
     </Wrapper>
