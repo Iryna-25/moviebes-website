@@ -1,12 +1,15 @@
-import { NavItem } from "./AppBar.styled"
+import { NavItem, NavHeader, NavContainer } from "./AppBar.styled"
 
 export const AppBar = () => {
     return (
-        <header>
-            <nav>
+        <NavHeader>
+            <div width="100px" height="40px" background-color="#3DD2CC" marginTop="56px">
+
+            </div>
+            <NavContainer>
                 <NavItem to={'homepage'}>Home</NavItem>
                 <NavItem to={'moviespage'}>Movies</NavItem> 
-            </nav>
-        </header>
+            </NavContainer>
+        </NavHeader>
     )
 }
