@@ -7,10 +7,16 @@ background-color: ${({theme}) => theme.colors.sideBarBackground};
 border-radius: 0px 45px 45px 0px;
 display: flex;
 justify-content: center;
+flex-direction: column;
 `;
 
+export const Logo = styled.img`
+width: 100px;
+height: 40px;
+margin: 56px 50px 100px 50px;
+`
+
 export const NavContainer = styled.nav`
-  margin-top: 170px;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -27,13 +33,21 @@ export const NavItem = styled(NavLink)`
   text-decoration: none;
   text-align: center;
   padding: 40px 0px 37px 25px;
-  &:hover {
-    background-color: ${({theme}) => theme.colors.accentColor};
-    color: black;
-    opacity: 0.4;
+
+  & > svg {
+    font-size: 25px;
   }
-  
+  & > span {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  &:hover {
+    background-color: ${({theme}) => theme.colors.accentHoverColor};
+    color: ${({theme}) => theme.colors.accentColor}; 
+  }
   &.active {
-    border-right: 3px solid #3DD2CC;
+    background-color: ${({theme}) => theme.colors.accentHoverColor};
+    color: ${({theme}) => theme.colors.accentColor}; 
+    border-right: 3px solid ${({theme}) => theme.colors.accentColor};
   }
 `;

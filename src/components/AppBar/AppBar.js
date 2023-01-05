@@ -1,14 +1,17 @@
-import { NavItem, NavHeader, NavContainer } from "./AppBar.styled"
+import { NavItem, NavHeader, NavContainer, Logo } from "./AppBar.styled"
+import LogoPic from "../../assets/pictures/Logo.png";
+import { BsCameraReels } from "react-icons/bs";
+import { BiHomeAlt } from "react-icons/bi";
 
 export const AppBar = () => {
     return (
         <NavHeader>
-            <div width="100px" height="40px" background-color="#3DD2CC" marginTop="56px">
+            <Logo src={LogoPic}/>
 
-            </div>
+            
             <NavContainer>
-                <NavItem to={'/'}>Home</NavItem>
-                <NavItem to={'/moviespage'}>Movies</NavItem> 
+                <NavItem to={'/'}><BiHomeAlt/><span>Home</span></NavItem>
+                <NavItem to={'/moviespage'}><BsCameraReels/><span>Movies</span></NavItem> 
             </NavContainer>
         </NavHeader>
     )
