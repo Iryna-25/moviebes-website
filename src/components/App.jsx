@@ -7,12 +7,13 @@ import { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from './Layout/layout';
 import { GlobalStyle } from './GlobalStyle';
+import { Loader } from './Loader/Loader';
 
 
 export const App = () => {
   return (
     <>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<Loader/>}>
       <Routes>
           <Route path='/' element={<Layout/>}>
             <Route index element={<HomePage />} />

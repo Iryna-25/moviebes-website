@@ -3,8 +3,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 import styled from "styled-components";
 
+
 export const Wrapper = styled.div `
-  width: 100%;
+  width: 70%;
   margin: 20px auto;
   height: 100%;
 `
@@ -12,12 +13,13 @@ export const Wrapper = styled.div `
 export const SlideImg = styled.img `
   width: 50rem;
   margin: 20 auto;
+  border-radius: 7%;
 `
 
 export const Slide = styled.div `
   transition: transform 300ms;
   transform: scale(0.8); 
-  opacity: 0.8;  
+  opacity: 0.3;  
 
   ${({active}) => active&&`
     transform: scale(1);
@@ -26,19 +28,37 @@ export const Slide = styled.div `
 `
 
 export const ArrowNext = styled.div `
-  background-color: #fff;
+  color: ${({theme}) => theme.colors.secondaryTextColor}; 
   position: absolute;
   cursor: pointer;
   z-index: 10;
-  right: 0%;
+  right: -10%;
   top: 50%;
+
+  & > svg {
+    font-size: 40px;
+  }
+
+  &:hover
+  &:focus {
+    color: ${({theme}) => theme.colors.accentColor}; 
+  }
 `
 
 export const ArrowPrev = styled.div `
-  background-color: #fff;
+  color: ${({theme}) => theme.colors.secondaryTextColor}; 
   position: absolute;
   cursor: pointer;
   z-index: 10;
-  left: 0%;
+  left: -10%;
   top: 50%;
+
+  & > svg {
+    font-size: 40px;
+  }
+
+  &:hover
+  &:focus {
+    color: ${({theme}) => theme.colors.accentColor}; 
+  }
 `

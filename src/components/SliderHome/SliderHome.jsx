@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import { ArrowNext, ArrowPrev, Wrapper, SlideImg, Slide } from "./SliderHome.style";
+import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
+import { ArrowNext, ArrowPrev, Wrapper, SlideImg, Slide} from "./SliderHome.style";
 import { getTrandingMovies } from "services/api";
 import { Box } from "components/Box";
 
@@ -18,7 +18,7 @@ function SliderHome () {
   const NextArrow = ({ onClick }) => {
     return (
       <ArrowNext onClick={onClick}>
-        <FaArrowRight />
+        <BsArrowRightCircle />
       </ArrowNext>
     );
   };
@@ -26,7 +26,7 @@ function SliderHome () {
   const PrevArrow = ({ onClick }) => {
     return (
       <ArrowPrev onClick={onClick}>
-        <FaArrowLeft />
+        <BsArrowLeftCircle />
       </ArrowPrev>
     );
   };
