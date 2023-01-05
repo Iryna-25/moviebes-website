@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-
 import { ArrowNext, ArrowPrev, Wrapper, SlideImg, Slide } from "./SliderHome.style";
 import { getTrandingMovies } from "services/api";
 import { Box } from "components/Box";

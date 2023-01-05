@@ -3,22 +3,21 @@ import "slick-carousel/slick/slick-theme.css";
 
 import styled from "styled-components";
 
-
 export const Wrapper = styled.div `
   width: 100%;
   margin: 20px auto;
-  height: 150px;
+  height: 100%;
 `
 
 export const SlideImg = styled.img `
   width: 50rem;
-  margin: 0 auto;
+  margin: 20 auto;
 `
 
 export const Slide = styled.div `
   transition: transform 300ms;
   transform: scale(0.8); 
-  opacity: 0.5;  
+  opacity: 0.8;  
 
   ${({active}) => active&&`
     transform: scale(1);
