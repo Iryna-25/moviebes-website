@@ -7,8 +7,8 @@ export const AppBar = () => {
 
             </div>
             <NavContainer>
-                <NavItem to={'homepage'}>Home</NavItem>
-                <NavItem to={'moviespage'}>Movies</NavItem> 
+                <NavItem to={'/'}>Home</NavItem>
+                <NavItem to={'/moviespage'}>Movies</NavItem> 
             </NavContainer>
         </NavHeader>
     )

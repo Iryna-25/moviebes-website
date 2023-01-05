@@ -54,7 +54,7 @@ function SliderHome () {
           key={img.id} 
           active={idx === imageIndex ?? true}
           > 
-            <SlideImg src={`https://image.tmdb.org/t/p/w500${img.backdrop_path}`} alt={img} />
+            <SlideImg src={`https://image.tmdb.org/t/p/w500${img.poster_path}`} alt={img} />
           </Slide>
         ))}
       </Slider>

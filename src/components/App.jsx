@@ -15,7 +15,7 @@ export const App = () => {
     <Suspense fallback={<div>Loading...</div>}>
       <Routes>
           <Route path='/' element={<Layout/>}>
-            <Route path='homepage' element={<HomePage />} />
+            <Route index element={<HomePage />} />
             <Route path='moviespage' element={<MoviesPage />} />
             <Route path='moviespage/:filmId' element={<MovieReviewPage />} />
             <Route path='loginpage' element={<LoginPage />} />
