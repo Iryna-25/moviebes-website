@@ -1,4 +1,6 @@
-import { useState } from "react"
+import { useState } from "react";
+import { SearchForm, SearchContainer } from "./SearchBar.styled";
+import { SlMagnifier } from 'react-icons/sl';
 
 
 export const SearchBar = ({onSubmit}) => {
@@ -25,16 +27,19 @@ export const SearchBar = ({onSubmit}) => {
 
     return (
         <>
-            <form onSubmit={formSubmit}>
+        <SearchContainer>
+            <SearchForm onSubmit={formSubmit}>
+            <SlMagnifier/>
                 <input
                     type='text'
                     autoComplete='off'
                     autoFocus
-                    placeholder="Search for movies"
+                    placeholder="Search for movies..."
                     name='name'
                     onChange={handleInputChange}
                 />
-            </form>
+            </SearchForm>
+        </SearchContainer>
         </>
     )
 }
