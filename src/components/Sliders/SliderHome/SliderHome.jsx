@@ -5,7 +5,7 @@ import { ArrowNext, ArrowPrev, Wrapper, SlideImg, Slide} from "./SliderHome.styl
 import { getTrandingMovies } from "services/api";
 import { Box } from "components/Box";
 
-function SliderHome () {
+export const SliderHome = () => {
 
   const [trandingImg, setTrandingImg] = useState([]);
 

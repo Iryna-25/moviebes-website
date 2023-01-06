@@ -2,10 +2,14 @@ export const theme = {
     colors: {
       primaryTextColor: '#666666',
       secondaryTextColor: '#E8E8E8',
+      thirdTextColor: '#BABABA',
       accentColor: '#3DD2CC',
       accentHoverColor: '#2C6866',
       pageBackground: '#7B7B7B',
       sideBarBackground: '#212121',
+      borderButtonColor: '#4D4B4B',
+      primaryBackgroundColor: '#191919',
+      primaryBackgroundButton: '#FEFEFEF5',
     },
     space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
     fonts: {

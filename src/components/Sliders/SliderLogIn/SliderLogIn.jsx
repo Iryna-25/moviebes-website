@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ArrowLeft from "./Arrow-left.svg";
 import ArrowRight from "./Arrow-right.svg";
-import { ArrowLeftStyles, ArrowRightStyles, SliderStyles, SlideStyles} from "./SliderSignUp.style";
+import { ArrowLeftStyles, ArrowRightStyles, SliderStyles, SlideStyles} from "./SliderLogIn.styled";
 
 const Slider = ({slides}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
