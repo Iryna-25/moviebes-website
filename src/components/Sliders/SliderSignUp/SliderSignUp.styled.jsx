@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div `
-  width: 100vw;
+  width: 936px;
   margin: 0px auto;
-  height: 936px;
-  padding: 0px 187px 232px 57px;
+  height: 982px;
   text-align: left;
   background-color: rgba(0, 0, 0, 0.5);
   background-image: url(${"https://picsum.photos/200/300"});
@@ -12,21 +11,12 @@ export const Wrapper = styled.div `
   background-size: cover;
 `
 
-export const LogoWrapper = styled.div `
-  display: flex;
-  margin: 50px 0px 350px 0px;
-`
-
-export const Pic = styled.img `
-  width: 35px;
-  height: 35px;
-  margin-right: 9px;
-`
-
-export const Logo = styled.img `
-  width: 100px;
-  height: 40px;
-`
+export const TextWrapper = styled.div `
+  text-align: left;
+  justify-content: center;
+  margin-top: 400px;
+  margin-left: 57px;
+` 
 
 export const TitleStyle = styled.h1 `
   font-family: ${p => p.theme.fonts.body};

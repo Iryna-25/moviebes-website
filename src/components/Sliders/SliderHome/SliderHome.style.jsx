@@ -39,7 +39,7 @@ export const ArrowNext = styled.div `
     font-size: 40px;
   }
 
-  &:hover
+  &:hover,
   &:focus {
     color: ${({theme}) => theme.colors.accentColor}; 
   }
@@ -57,7 +57,7 @@ export const ArrowPrev = styled.div `
     font-size: 40px;
   }
 
-  &:hover
+  &:hover,
   &:focus {
     color: ${({theme}) => theme.colors.accentColor}; 
   }

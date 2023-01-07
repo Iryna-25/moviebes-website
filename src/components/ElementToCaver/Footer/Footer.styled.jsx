@@ -25,6 +25,6 @@ export const Item = styled.a `
     }
     
     a:visited {
-        color: ${p => p.theme.colors.primaryBackgroundButton};;
+        color: ${p => p.theme.colors.primaryBackgroundButton};
     }
 `

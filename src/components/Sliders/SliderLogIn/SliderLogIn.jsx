@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import ArrowLeft from "./Arrow-left.svg";
-import ArrowRight from "./Arrow-right.svg";
-import { ArrowLeftStyles, ArrowRightStyles, SliderStyles, SlideStyles} from "./SliderLogIn.styled";
+import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
+import { ArrowLeftStyles, ArrowRightStyles, SliderLogInStyles, SlideLogInStyles} from "./SliderLogIn.styled";
 
-const Slider = ({slides}) => {
+const SliderLogIn = ({slides}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const slideStyles = {
@@ -23,22 +22,20 @@ const Slider = ({slides}) => {
     };
 
     return (
-        <SliderStyles>
+        <SliderLogInStyles>
             <ArrowLeftStyles
                 onClick={goToPrevious}>
-                <img src={ArrowLeft} 
-                alt="Arrow-left"/>  
+                <BsArrowLeftCircle/>  
             </ArrowLeftStyles>
             <ArrowRightStyles 
                 onClick={goToNext}>         
-                <img src={ArrowRight} 
-                alt="Arrow-right" />
+                <BsArrowRightCircle/>
             </ArrowRightStyles>
-            <SlideStyles style={slideStyles} />
-        </SliderStyles>
+            <SlideLogInStyles style={slideStyles} />
+        </SliderLogInStyles>
     )
 };
 
-export default Slider;
+export default SliderLogIn;
 
 

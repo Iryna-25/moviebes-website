@@ -4,10 +4,10 @@ export const Title = styled.h1 `
     font-family: ${p => p.theme.fonts.body};
     font-weight: ${p => p.theme.fontWeights.bold};
     font-size: 35px;
-    color: #FEFEFE;
+    color: ${p => p.theme.colors.primaryBackgroundButton};
     text-align: center;
     
-    padding-top: 166px;
+    margin-top: 166px;
 `
 
 export const Subtitle = styled.h3 `
@@ -18,4 +18,5 @@ export const Subtitle = styled.h3 `
     color: ${p => p.theme.colors.thirdTextColor};
     
     margin-top: 14px;
+    margin-bottom: 47px;
 `
