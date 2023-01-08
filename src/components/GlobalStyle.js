@@ -3,10 +3,9 @@ import 'modern-normalize';
 
 
 export const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-
 body {
     background-color: ${({theme}) => theme.colors.pageBackground};
+    color: ${({theme}) => theme.colors.secondaryTextColor};
     margin: 0;
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
