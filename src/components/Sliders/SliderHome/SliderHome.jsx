@@ -50,15 +50,15 @@ export const SliderHome = () => {
     <Box display='grid' gridTemplateColumns="repeat(auto-fit, minmax(250px, 1fr))" gridGap="1rem">
       <Wrapper>
       <Slider {...settings}>
-        {trandingImg.map((img, idx) => (
-          <NavLink to={`/moviespage/${img.id}`}>
-            <Slide 
-              key={img.id} 
-              active={idx === imageIndex ?? true}
-            > 
-            <SlideImg src={`https://image.tmdb.org/t/p/w500${img.poster_path}`} alt={img} />
-            </Slide>
-          </NavLink>
+        {trandingImg.map((img, idx) => ( 
+          <Slide   
+            key={img.id} 
+            active={idx === imageIndex ?? true}
+          >
+            <NavLink to={`/moviespage/${img.id}`}>
+              <SlideImg src={`https://image.tmdb.org/t/p/w500${img.poster_path}`} alt={img} />
+            </NavLink>
+          </Slide>   
         ))}
       </Slider>
     </Wrapper>
