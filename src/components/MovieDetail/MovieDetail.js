@@ -25,8 +25,7 @@ export const MovieDetail = ({movie}) => {
                 <MovieOverview>
                     {movie.overview}
                 </MovieOverview>
-                <OverviewTitle>Score:</OverviewTitle>
-                {/* <Score></Score> */}
+                
                 </OverviewContainer>
         </MovieDetailSection>
     )
