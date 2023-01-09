@@ -15,7 +15,7 @@ export const Loader = () =>  {
         />
         <path 
           fill="none" 
-          stroke-linecap="round"
+          strokeLinecap="round"
           d="M14.1 27.2l7.1 7.2 16.7-16.8"
         />
       </Checkmark>  
