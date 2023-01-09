@@ -9,6 +9,7 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 min-height: 750px;
+position: fixed;
 `;
 
 export const Logo = styled.img`

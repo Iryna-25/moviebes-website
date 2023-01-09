@@ -19,7 +19,7 @@ div {
     display: flex;
     position: relative;
 
-    top:10%;
+    top:15%;
     left: 80%;
 }
 
