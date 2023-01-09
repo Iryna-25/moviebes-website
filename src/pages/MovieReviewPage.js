@@ -1,3 +1,4 @@
+import { Loader } from "components/Loader/Loader";
 import { MovieDetail } from "components/MovieDetail/MovieDetail";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
@@ -16,7 +17,7 @@ export const MovieReviewPage = () => {
 
     return (
         <>
-            {movie === null ? <span>Loading...</span> : <MovieDetail movie={ movie } />}   
+            {movie === null ? <Loader/> : <MovieDetail movie={ movie } />}   
         </>
     )
 };

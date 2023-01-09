@@ -4,6 +4,7 @@ import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 import { ArrowNext, ArrowPrev, Wrapper, SlideImg, Slide} from "./SliderHome.style";
 import { getTrandingMovies } from "services/api";
 import { Box } from "components/Box";
+import { NavLink } from "react-router-dom";
 
 export const SliderHome = () => {
 
@@ -50,12 +51,14 @@ export const SliderHome = () => {
       <Wrapper>
       <Slider {...settings}>
         {trandingImg.map((img, idx) => (
-          <Slide 
-          key={img.id} 
-          active={idx === imageIndex ?? true}
-          > 
+          <NavLink to={`/moviespage/${img.id}`}>
+            <Slide 
+              key={img.id} 
+              active={idx === imageIndex ?? true}
+            > 
             <SlideImg src={`https://image.tmdb.org/t/p/w500${img.poster_path}`} alt={img} />
-          </Slide>
+            </Slide>
+          </NavLink>
         ))}
       </Slider>
     </Wrapper>
