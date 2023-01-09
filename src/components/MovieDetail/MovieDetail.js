@@ -1,9 +1,23 @@
+import { MovieTitle, TrailerContainer, MovieOverview, GeneresContainer, TitleContainer } from "./MovieDetail.styled"
+
 export const MovieDetail = ({movie}) => {
     return (
         <section>
-            <h1>
+            <TrailerContainer>
+
+            </TrailerContainer>
+            <TitleContainer>
+            <MovieTitle>
                 {movie.title}
-            </h1>
+            </MovieTitle>
+            <GeneresContainer>
+                { movie.genres.map((g) => (<span key={g.id}>{g.name}</span>)) }
+            </GeneresContainer>    
+            </TitleContainer>
+           
+            <MovieOverview>
+                {movie.overview}
+            </MovieOverview>
         </section>
     )
 }
