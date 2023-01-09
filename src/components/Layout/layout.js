@@ -1,12 +1,12 @@
 import { AppBar } from "components/AppBar/AppBar";
-import { Box } from "components/Box";
 import { Outlet } from "react-router";
+import { LayoutBox } from "./Layout.styled";
 
 export const Layout = () => {
     return (
-        <Box display="grid" gridTemplateColumns="200px 1fr">
+        <LayoutBox>
             <AppBar />
             <Outlet />
-        </Box>
+        </LayoutBox>
     )
 }

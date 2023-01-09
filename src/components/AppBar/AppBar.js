@@ -8,12 +8,12 @@ import { Link } from "react-router-dom";
 export const AppBar = () => {
     return (
         <NavHeader>
-            <Link to={'/'}><Logo src={LogoPic}/></Link>
-            
-            <NavContainer>
-                <NavItem to={'/'}><BiHomeAlt/><span>Home</span></NavItem>
-                <NavItem to={'/moviespage'}><BsCameraReels/><span>Movies</span></NavItem> 
-            </NavContainer>
+                <Link to={'/'}><Logo src={LogoPic}/></Link>
+                
+                <NavContainer>
+                    <NavItem to={'/'}><BiHomeAlt/><span>Home</span></NavItem>
+                    <NavItem to={'/moviespage'}><BsCameraReels/><span>Movies</span></NavItem> 
+                </NavContainer>
         </NavHeader>
     )
 }
