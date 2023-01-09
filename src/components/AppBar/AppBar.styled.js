@@ -8,6 +8,7 @@ border-radius: 0px 45px 45px 0px;
 display: flex;
 justify-content: center;
 flex-direction: column;
+min-height: 750px;
 `;
 
 export const Logo = styled.img`
@@ -33,6 +34,7 @@ export const NavItem = styled(NavLink)`
   text-decoration: none;
   text-align: center;
   padding: 40px 0px 37px 25px;
+  transition: all 0.3s ease 0s;
 
   & > svg {
     font-size: 25px;

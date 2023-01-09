@@ -34,6 +34,7 @@ export const ArrowNext = styled.div `
   z-index: 10;
   right: -10%;
   top: 50%;
+  transition: all 0.3s ease 0s;
 
   & > svg {
     font-size: 40px;
@@ -52,6 +53,7 @@ export const ArrowPrev = styled.div `
   z-index: 10;
   left: -10%;
   top: 50%;
+  transition: all 0.3s ease 0s;
 
   & > svg {
     font-size: 40px;
