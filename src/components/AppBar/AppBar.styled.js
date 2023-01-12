@@ -49,7 +49,6 @@ export const NavItem = styled(NavLink)`
     color: ${({theme}) => theme.colors.accentColor}; 
   }
   &.active {
-    background-color: ${({theme}) => theme.colors.accentHoverColor};
     color: ${({theme}) => theme.colors.accentColor}; 
     border-right: 3px solid ${({theme}) => theme.colors.accentColor};
   }
