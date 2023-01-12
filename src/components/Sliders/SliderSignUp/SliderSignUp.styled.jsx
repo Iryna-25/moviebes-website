@@ -6,7 +6,7 @@ export const Wrapper = styled.div `
   height: 982px;
   text-align: left;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url(${"https://picsum.photos/200/300"});
+  background-image: url(${"https://image.tmdb.org/t/p/w500/bGlTTHAhLJXIXb1a0zyBEPqtxV9.jpg"});
   background-repeat: no-repeat;
   background-size: cover;
 `

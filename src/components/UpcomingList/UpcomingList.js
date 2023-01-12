@@ -1,10 +1,10 @@
-import { Title, MovieImg, MovieColumn, } from "./UpcomingList.styled";
+import { Title, MovieImg, MovieColumn, LoadMore } from "./UpcomingList.styled";
 import { Box } from "components/Box";
 import { NavLink } from "react-router-dom";
 
-export const UpcomingList = ({movies}) => {
+export const UpcomingList = ({movies, loadMore}) => {
     return (
-        <>
+        <div>
             <Title>Upcoming</Title>
             <Box as={"ul"} display="grid" gridTemplateColumns="repeat(auto-fit, minmax(250px, 1fr))" gridGap="1em" padding="0 20px">
                 {movies.map(movie => (
@@ -16,9 +16,10 @@ export const UpcomingList = ({movies}) => {
                             />
                         </NavLink>
                     </MovieColumn>
-                ))}
+                ))}       
             </Box>
-        </>
+            <LoadMore type="button" onClick={loadMore}> Load more</LoadMore>  
+        </div>
     );
 };
 

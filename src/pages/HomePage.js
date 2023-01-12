@@ -5,16 +5,21 @@ import { getUpcomingMovies } from "services/api";
 
 export const HomePage = () => {
     const [movies, setMovies] = useState(null);
+    const [page, setPage] = useState(1);
 
     useEffect(() => {
-        getUpcomingMovies().then(data => {
-            setMovies(data.results);
+        getUpcomingMovies(page).then(data => {
+            setMovies(prevState =>(page === 1 ? data.results : [...prevState, ...data.results]));
         });
-    }, []);
+    }, [page]);
+
+    const loadMore = () => {
+        setPage(prevState => prevState + 1);
+    };
 
     return (
         <>
-        {movies === null ? <Loader/> : <HomePageContent movies={ movies } />}
+        {movies === null ? <Loader/> : <HomePageContent movies={ movies } loadMore={loadMore} />}
         </>
     )
 };
