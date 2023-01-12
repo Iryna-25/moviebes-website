@@ -24,7 +24,7 @@ export const MoviesPageContent = () => {
     return (
         <section>
             <SearchBar onSubmit={handleFormSubmit} />
-            <MoviesList movies={ movies } />
+            <MoviesList movies={movies} />
         </section>
     )
 }

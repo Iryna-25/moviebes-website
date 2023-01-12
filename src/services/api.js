@@ -9,11 +9,11 @@ export const getTrandingMovies = () => {
     return axios.get(URL).then(response => response.data);
 };
 
-export const getUpcomingMovies = () => {
-    const URL = `${BASE_URL}/movie/upcoming?api_key=${API_KEY}`;
+export const getUpcomingMovies = (page) => {
+    const URL = `${BASE_URL}/movie/upcoming?&page=${page}&api_key=${API_KEY}`;
 
     return axios.get(URL).then(response => response.data);
-}
+};
 
 export const getMoviesByName = (name) => {
     const URL = `${BASE_URL}/search/movie?query=${name}&api_key=${API_KEY}&include_adult=false`;

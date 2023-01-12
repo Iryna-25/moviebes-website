@@ -19,11 +19,9 @@ export const App = () => {
             <Route index element={<HomePage />} />
             <Route path='moviespage' element={<MoviesPage />} />
             <Route path='moviespage/:movieId' element={<MovieReviewPage />} />
-          </Route> 
-          <Route>            
-            <Route path='loginpage' element={<LoginPage />} />
-            <Route path='signuppage' element={<SignUpPage />} /> 
           </Route>        
+          <Route path='/loginpage' element={<LoginPage />} />
+          <Route path='/signuppage' element={<SignUpPage />} />    
       </Routes>
     </Suspense>
     <GlobalStyle/>

@@ -23,3 +23,7 @@ transition: all 0.3s ease 0s;
     transform: scale(1.04);
 }
 `;
+
+export const LoadMore = styled.button`
+    margin-top: 20px;
+`
