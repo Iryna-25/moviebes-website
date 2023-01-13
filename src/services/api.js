@@ -15,8 +15,8 @@ export const getUpcomingMovies = (page) => {
     return axios.get(URL).then(response => response.data);
 };
 
-export const getMoviesByName = (name) => {
-    const URL = `${BASE_URL}/search/movie?query=${name}&api_key=${API_KEY}&include_adult=false`;
+export const getMoviesByName = (name, page) => {
+    const URL = `${BASE_URL}/search/movie?page=${page}&query=${name}&api_key=${API_KEY}&include_adult=false`;
 
     return axios.get(URL).then(response => response.data);
 };

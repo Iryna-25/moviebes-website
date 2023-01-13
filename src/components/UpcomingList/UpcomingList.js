@@ -1,12 +1,12 @@
-import { Title, MovieImg, MovieColumn, LoadMore } from "./UpcomingList.styled";
-import { Box } from "components/Box";
+import { Title, MovieImg, MovieColumn, UpcomingGrid } from "./UpcomingList.styled";
 import { NavLink } from "react-router-dom";
+import { LoadMoreButton } from "components/LoadMore/LoadMoreButton";
 
 export const UpcomingList = ({movies, loadMore}) => {
     return (
         <div>
             <Title>Upcoming</Title>
-            <Box as={"ul"} display="grid" gridTemplateColumns="repeat(auto-fit, minmax(250px, 1fr))" gridGap="1em" padding="0 20px">
+            <UpcomingGrid>
                 {movies.map(movie => (
                     <MovieColumn key={movie.id}>
                         <NavLink to={`/moviespage/${movie.id}`}>
@@ -17,8 +17,10 @@ export const UpcomingList = ({movies, loadMore}) => {
                         </NavLink>
                     </MovieColumn>
                 ))}       
-            </Box>
-            <LoadMore type="button" onClick={loadMore}> Load more</LoadMore>  
+            </UpcomingGrid>
+
+            { movies.length >=1 && <LoadMoreButton loadMore={loadMore} /> }  
+            
         </div>
     );
 };

@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const UpcomingGrid = styled.ul`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 1em;
+    padding: 0px 20px;
+`
 
 export const Title = styled.h1`
 font-size: ${({theme}) => theme.colors.pageBackground};
@@ -14,16 +20,11 @@ justify-content: center;
 `;
 
 export const MovieImg = styled.img`
-width: 262px;
+width: 100%;
 border-radius: 20px;
 transition: all 0.3s ease 0s;
-
 
 :hover {
     transform: scale(1.04);
 }
 `;
-
-export const LoadMore = styled.button`
-    margin-top: 20px;
-`

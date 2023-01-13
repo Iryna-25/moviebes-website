@@ -26,7 +26,6 @@ export const SearchBar = ({onSubmit}) => {
    
 
     return (
-        <>
         <SearchContainer>
             <SearchForm onSubmit={formSubmit}>
             <SlMagnifier/>
@@ -40,6 +39,5 @@ export const SearchBar = ({onSubmit}) => {
                 />
             </SearchForm>
         </SearchContainer>
-        </>
     )
 }
