@@ -1,11 +1,11 @@
-import { MoviesColumn, MovieImg } from "./MoviesList.styled";
-import { Box } from "components/Box";
+import { MoviesColumn, MovieImg, SearchedMovieGrid } from "./MoviesList.styled";
 import { NavLink } from "react-router-dom";
+import { LoadMoreButton } from "components/LoadMore/LoadMoreButton";
 
-export const MoviesList = ({ movies }) => {
+export const MoviesList = ({ movies, loadMore }) => {
     return (
-        <>
-            <Box as={"ul"} display="grid" gridTemplateColumns="repeat(auto-fit, minmax(250px, 1fr))" gridGap="1rem" padding="0 20px">
+        <div>
+            <SearchedMovieGrid>
                 {movies.map(movie => (
                     <MoviesColumn key={movie.id}>
                         <NavLink to={`/moviespage/${movie.id}`}>
@@ -15,7 +15,8 @@ export const MoviesList = ({ movies }) => {
                         </NavLink>
                     </MoviesColumn>
                 ))}
-            </Box>
-        </>
+            </SearchedMovieGrid>
+            {movies.length >=1 && <LoadMoreButton loadMore={loadMore} />}
+        </div>
     );
 };

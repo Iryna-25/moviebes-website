@@ -6,6 +6,7 @@ import { getMoviesByName } from "services/api";
 export const MoviesPageContent = () => {
     const [movies, setMovies] = useState([]);
     const [movieName, setMovieName] = useState('');
+    const [page, setPage] = useState(1);
 
     const handleFormSubmit = (value) => {
         setMovieName(value);
@@ -14,17 +15,23 @@ export const MoviesPageContent = () => {
     useEffect(() => {
         if (movieName === '') {
             return
-        };
+        }
 
-        getMoviesByName(movieName).then(data => {
-            setMovies(data.results)
+        getMoviesByName(movieName, page).then(data => {
+            setMovies(prevState => (page === 1 ? data.results : [...prevState, ...data.results]));
         });
-    },[movieName]);
+
+    }, [movieName, page]);
+
+    
+    const loadMore = () => {
+        setPage(prevState => prevState + 1);
+    };
 
     return (
         <section>
             <SearchBar onSubmit={handleFormSubmit} />
-            <MoviesList movies={movies} />
+            <MoviesList movies={movies} loadMore={ loadMore } />
         </section>
     )
 }
