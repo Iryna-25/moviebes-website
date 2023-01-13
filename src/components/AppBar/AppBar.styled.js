@@ -8,7 +8,7 @@ border-radius: 0px 45px 45px 0px;
 display: flex;
 justify-content: center;
 flex-direction: column;
-min-height: 750px;
+height: 100%;
 position: fixed;
 `;
 

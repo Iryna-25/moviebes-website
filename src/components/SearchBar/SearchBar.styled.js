@@ -26,7 +26,7 @@ color: ${({theme}) => theme.colors.primaryTextColor};
 border: none;
 font-weight: ${({theme}) => theme.fontWeights.medium};
 font-size: 25px;
-padding: 10px 630px 5px 2px;
+padding: 10px;
 outline: none;
 border-radius: 30px;
 }
