@@ -23,8 +23,6 @@ export const SearchBar = ({onSubmit}) => {
         event.currentTarget.reset();
     };
 
-   
-
     return (
         <SearchContainer>
             <SearchForm onSubmit={formSubmit}>
