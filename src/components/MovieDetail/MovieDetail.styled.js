@@ -41,6 +41,7 @@ display: flex;
 align-items: center;
 text-align: center;
 margin: 37px 0 0 0;
+max-width: 500px;
 
 h1 {
     font-size: 25px;
@@ -53,6 +54,10 @@ p {
     font-weight: 700;
     margin: 0 0 0 5px;
 }
+`;
+
+export const Tagline = styled.blockquote`
+font-style: italic;
 `;
 
 export const GeneresContainer = styled.ul`
@@ -90,4 +95,28 @@ export const MovieOverview = styled.p`
 font-weight: 400;
 font-size: 16px;
 margin: 0px 0px 0px 0px;
+`;
+
+export const LenguagesContainer = styled.ul`
+display: flex;
+margin: 0;
+padding: 0;
+
+
+& > li {
+    margin: 0 5px 0px 5px;
+}
+`;
+
+export const SmallDitielsContainer = styled.div`
+display: flex;
+align-items: center;
+text-align: center;
+margin: 20px 0 0 0;
+
+`;
+
+export const SmallOverviewTitle = styled.p`
+font-size: 18px;
+margin: 0 10px 0 0;
 `;
