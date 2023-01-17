@@ -1,4 +1,5 @@
 import { MoviesList } from "components/MoviesList/MoviesList";
+import { ScrollUpButton } from "components/ScrollUpButton/ScrollUpButton";
 import { SearchBar } from "components/SearchBar/SearchBar";
 import { useEffect, useState } from "react";
 import { getMoviesByName } from "services/api";
@@ -31,7 +32,8 @@ export const MoviesPageContent = () => {
     return (
         <section>
             <SearchBar onSubmit={handleFormSubmit} />
-            <MoviesList movies={movies} loadMore={ loadMore } />
+            <MoviesList movies={movies} loadMore={loadMore} />
+            <ScrollUpButton/>
         </section>
     )
 }
