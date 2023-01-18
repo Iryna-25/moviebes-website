@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ScrollButton } from "./ScrollUpButton.styled";
+import { IoIosArrowDropupCircle } from "react-icons/io";
 
 export const ScrollUpButton = () => {
     
@@ -26,7 +27,7 @@ export const ScrollUpButton = () => {
       <>
             {backToTopButton && ( 
                 <ScrollButton onClick={scrollUp} type="button">    
-                    UP   
+                 <IoIosArrowDropupCircle/>
                 </ScrollButton>   
             )}      
       </>
