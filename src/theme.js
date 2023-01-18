@@ -5,7 +5,7 @@ export const theme = {
       thirdTextColor: '#BABABA',
       accentColor: '#3DD2CC',
       accentHoverColor: '#2C6866',
-      pageBackground: '#000000',
+      pageBackground: '#363636',
       sideBarBackground: '#212121',
       borderButtonColor: '#4D4B4B',
       primaryBackgroundColor: '#191919',
