@@ -12,6 +12,7 @@ export const SearchForm = styled.form`
 display: inline-flex;
 text-align: center;
 align-items: center;
+justify-content: space-between;
 
 & > svg {
     color: ${({theme}) => theme.colors.primaryTextColor};

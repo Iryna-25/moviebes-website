@@ -1,7 +1,9 @@
 import { MoviesPageContent } from "components/MoviesPageContent/MoviesPageContent";
 
-export const MoviesPage = () => {
+const MoviesPage = () => {
     return (
         <MoviesPageContent />
     )
 };
+
+export default MoviesPage;
