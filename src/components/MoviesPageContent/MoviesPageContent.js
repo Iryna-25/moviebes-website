@@ -14,16 +14,18 @@ export const MoviesPageContent = () => {
     };
 
     useEffect(() => {
-        if (movieName === '') {
-            return
-        }
+        if (movieName === '') { 
+          return; 
+        };
 
         getMoviesByName(movieName, page).then(data => {
-            setMovies(prevState => (page === 1 ? data.results : [...prevState, ...data.results]));
+            setMovies(prevState =>
+                page === 1 ? data.results : [...prevState, ...data.results]
+            );
         });
-
     }, [movieName, page]);
 
+    
     
     const loadMore = () => {
         setPage(prevState => prevState + 1);

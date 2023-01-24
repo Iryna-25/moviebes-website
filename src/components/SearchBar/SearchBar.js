@@ -15,16 +15,14 @@ export const SearchBar = ({onSubmit}) => {
         event.preventDefault();
 
         if (name === '') {
-            alert('Write name !!!');   
+            alert('Write name !!!');
             return;
         };
 
         onSubmit(name);
         event.currentTarget.reset();
     };
-
    
-
     return (
         <SearchContainer>
             <SearchForm onSubmit={formSubmit}>

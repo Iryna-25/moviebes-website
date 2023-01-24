@@ -3,7 +3,7 @@ import { Loader } from "components/Loader/Loader";
 import { useEffect, useState } from "react";
 import { getUpcomingMovies } from "services/api";
 
-export const HomePage = () => {
+ const HomePage = () => {
     const [movies, setMovies] = useState(null);
     const [page, setPage] = useState(1);
 
@@ -24,3 +24,4 @@ export const HomePage = () => {
     )
 };
 
+export default HomePage;
