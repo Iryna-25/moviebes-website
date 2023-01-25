@@ -47,6 +47,9 @@ export const theme = {
     },
 
     layout: {
+      loptop: '1030px',
+      tablet: '800px',
       mobile: '765px',
+      smallMobile: '360px',
     }
   };

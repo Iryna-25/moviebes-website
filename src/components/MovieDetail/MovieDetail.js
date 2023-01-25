@@ -60,12 +60,6 @@ export const MovieDetail = ({movie}) => {
                                 { movie.production_countries.map((g, i) => (<li key={i}>{g.name}</li>)) }
                             </LenguagesContainer>
                     </SmallDitielsContainer>
-                    <SmallDitielsContainer>
-                        <SmallOverviewTitle>Production Company:</SmallOverviewTitle>
-                        <LenguagesContainer>    
-                            { movie.production_companies.map((g, i) => (<li key={i}>{g.name}</li>)) }
-                        </LenguagesContainer>
-                    </SmallDitielsContainer>
                 </OverviewContainer>
         </MovieDetailSection>
     )
