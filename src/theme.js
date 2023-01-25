@@ -45,4 +45,8 @@ export const theme = {
       lg: '16px',
       round: '50%',
     },
+
+    layout: {
+      mobile: '765px',
+    }
   };

@@ -10,6 +10,12 @@ justify-content: center;
 flex-direction: column;
 height: 100%;
 position: fixed;
+transition: all .4s ease 0s;
+
+@media(max-width:${({theme}) => theme.layout.mobile}) {
+    transform: ${({ open }) => open ? "translateX(0)" : "translateX(-100%)"};
+    z-index: 10;
+}
 `;
 
 export const Logo = styled.img`
