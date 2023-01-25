@@ -8,6 +8,10 @@ export const Wrapper = styled.div `
   width: 70%;
   margin: 20px auto;
   height: 100%;
+
+  @media(max-width:${({theme}) => theme.layout.mobile}) {
+    display: none;
+}
 `
 
 export const SlideImg = styled.img `
