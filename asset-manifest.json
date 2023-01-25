@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/moviebes-website/static/css/main.38b09629.css",
-    "main.js": "/moviebes-website/static/js/main.9675560a.js",
+    "main.js": "/moviebes-website/static/js/main.d88ab200.js",
     "static/css/407.4d641f1d.chunk.css": "/moviebes-website/static/css/407.4d641f1d.chunk.css",
-    "static/js/407.d643886c.chunk.js": "/moviebes-website/static/js/407.d643886c.chunk.js",
+    "static/js/407.8ecfba00.chunk.js": "/moviebes-website/static/js/407.8ecfba00.chunk.js",
     "static/js/972.d2da81f0.chunk.js": "/moviebes-website/static/js/972.d2da81f0.chunk.js",
     "static/js/37.fdbc543b.chunk.js": "/moviebes-website/static/js/37.fdbc543b.chunk.js",
     "static/js/388.28eb4a4d.chunk.js": "/moviebes-website/static/js/388.28eb4a4d.chunk.js",
@@ -19,9 +19,9 @@
     "static/media/slick.woff": "/moviebes-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/moviebes-website/index.html",
     "main.38b09629.css.map": "/moviebes-website/static/css/main.38b09629.css.map",
-    "main.9675560a.js.map": "/moviebes-website/static/js/main.9675560a.js.map",
+    "main.d88ab200.js.map": "/moviebes-website/static/js/main.d88ab200.js.map",
     "407.4d641f1d.chunk.css.map": "/moviebes-website/static/css/407.4d641f1d.chunk.css.map",
-    "407.d643886c.chunk.js.map": "/moviebes-website/static/js/407.d643886c.chunk.js.map",
+    "407.8ecfba00.chunk.js.map": "/moviebes-website/static/js/407.8ecfba00.chunk.js.map",
     "972.d2da81f0.chunk.js.map": "/moviebes-website/static/js/972.d2da81f0.chunk.js.map",
     "37.fdbc543b.chunk.js.map": "/moviebes-website/static/js/37.fdbc543b.chunk.js.map",
     "388.28eb4a4d.chunk.js.map": "/moviebes-website/static/js/388.28eb4a4d.chunk.js.map",
@@ -32,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.38b09629.css",
-    "static/js/main.9675560a.js"
+    "static/js/main.d88ab200.js"
   ]
 }
