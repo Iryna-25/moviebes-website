@@ -45,13 +45,17 @@ export const Form = styled.form`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: ${({ theme }) => theme.colors.sideBarBackground};
   /* Change width of the form depending if the bar is opened or not */
-  width: ${props => (props.barOpened ? '30rem' : '2rem')};
+  width: ${props => (props.barOpened ? '70rem' : '2rem')};
   /* If bar opened, normal cursor on the whole form. If closed, show pointer on the whole form so user knows he can click to open it */
   cursor: ${props => (props.barOpened ? 'auto' : 'pointer')};
   padding: 2rem;
   height: 2rem;
   border-radius: 10rem;
   transition: width 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  @media screen and (max-width: ${({ theme }) => theme.layout.mobile}) {
+    width: ${props => (props.barOpened ? '20rem' : '2rem')};
+  }
 `;
 
 export const Input = styled.input`
