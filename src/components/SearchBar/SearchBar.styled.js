@@ -53,8 +53,20 @@ export const Form = styled.form`
   border-radius: 10rem;
   transition: width 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 
+  @media screen and (max-width: ${({ theme }) => theme.layout.loptop}) {
+    width: ${props => (props.barOpened ? '45rem' : '2rem')};
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.layout.tablet}) {
+    width: ${props => (props.barOpened ? '30rem' : '2rem')};
+  }
+
   @media screen and (max-width: ${({ theme }) => theme.layout.mobile}) {
-    width: ${props => (props.barOpened ? '20rem' : '2rem')};
+    width: ${props => (props.barOpened ? '17.5rem' : '2rem')};
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.layout.smallMobile}) {
+    width: ${props => (props.barOpened ? '14rem' : '2rem')};
   }
 `;
 
