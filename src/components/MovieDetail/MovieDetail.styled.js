@@ -113,7 +113,23 @@ export const SmallOverviewTitle = styled.p`
 `;
 
 export const BackButton = styled.button`
-  display: block;
+  background-color:  ${({ theme }) => theme.colors.accentColor};
+  color: ${({ theme }) => theme.colors.primaryTextColor};
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   margin: 0 0 20px 0;
-  padding: 5px 15px;
+  padding: 5px 30px 5px 10px;
+  border-radius: 40px;
+  border: 0;
+  transition: all .3s ease 0s;
+  -webkit-box-shadow: 10px 3px 23px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 3px 23px -3px rgba(0,0,0,0.75);
+  box-shadow: 10px 3px 23px -3px rgba(0,0,0,0.75);
+  
+  :hover{
+    background-color:  ${({ theme }) => theme.colors.accentHoverColor};
+    color: ${({ theme }) => theme.colors.accentColor};
+  }
 `;

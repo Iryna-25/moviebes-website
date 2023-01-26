@@ -13,6 +13,7 @@ import {
   OverviewTitle,
 } from './MovieDetail.styled';
 import { AiFillStar } from 'react-icons/ai';
+import { AiFillCaretLeft } from "react-icons/ai";
 
 export const MovieDetail = ({ movie }) => {
   return (
@@ -28,7 +29,7 @@ export const MovieDetail = ({ movie }) => {
         />
       </PosterContainer>
       <OverviewContainer>
-        <BackButton>Back</BackButton>
+        <BackButton><AiFillCaretLeft/>Back</BackButton>
         <MovieTitleContainer>
           <h1>{movie.title}</h1>
           <p>({movie.release_date})</p>
