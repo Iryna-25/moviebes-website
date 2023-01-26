@@ -9,7 +9,7 @@ export const Wrapper = styled.div `
   margin: 20px auto;
   height: 100%;
 
-  @media(max-width:${({theme}) => theme.layout.mobile}) {
+  @media(max-width: 768px) {
     display: none;
 }
 `
