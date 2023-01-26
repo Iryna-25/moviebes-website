@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/moviebes-website/static/css/main.38b09629.css",
-    "main.js": "/moviebes-website/static/js/main.3297f655.js",
+    "main.js": "/moviebes-website/static/js/main.be85b8a5.js",
     "static/css/407.4d641f1d.chunk.css": "/moviebes-website/static/css/407.4d641f1d.chunk.css",
     "static/js/407.7b74d9e7.chunk.js": "/moviebes-website/static/js/407.7b74d9e7.chunk.js",
     "static/js/972.2aaf7193.chunk.js": "/moviebes-website/static/js/972.2aaf7193.chunk.js",
-    "static/js/37.a960be59.chunk.js": "/moviebes-website/static/js/37.a960be59.chunk.js",
+    "static/js/37.9d7c8da6.chunk.js": "/moviebes-website/static/js/37.9d7c8da6.chunk.js",
     "static/js/388.28eb4a4d.chunk.js": "/moviebes-website/static/js/388.28eb4a4d.chunk.js",
     "static/js/373.dad1e271.chunk.js": "/moviebes-website/static/js/373.dad1e271.chunk.js",
     "static/js/956.f9fe9494.chunk.js": "/moviebes-website/static/js/956.f9fe9494.chunk.js",
@@ -19,11 +19,11 @@
     "static/media/slick.woff": "/moviebes-website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/moviebes-website/index.html",
     "main.38b09629.css.map": "/moviebes-website/static/css/main.38b09629.css.map",
-    "main.3297f655.js.map": "/moviebes-website/static/js/main.3297f655.js.map",
+    "main.be85b8a5.js.map": "/moviebes-website/static/js/main.be85b8a5.js.map",
     "407.4d641f1d.chunk.css.map": "/moviebes-website/static/css/407.4d641f1d.chunk.css.map",
     "407.7b74d9e7.chunk.js.map": "/moviebes-website/static/js/407.7b74d9e7.chunk.js.map",
     "972.2aaf7193.chunk.js.map": "/moviebes-website/static/js/972.2aaf7193.chunk.js.map",
-    "37.a960be59.chunk.js.map": "/moviebes-website/static/js/37.a960be59.chunk.js.map",
+    "37.9d7c8da6.chunk.js.map": "/moviebes-website/static/js/37.9d7c8da6.chunk.js.map",
     "388.28eb4a4d.chunk.js.map": "/moviebes-website/static/js/388.28eb4a4d.chunk.js.map",
     "373.dad1e271.chunk.js.map": "/moviebes-website/static/js/373.dad1e271.chunk.js.map",
     "956.f9fe9494.chunk.js.map": "/moviebes-website/static/js/956.f9fe9494.chunk.js.map",
@@ -32,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.38b09629.css",
-    "static/js/main.3297f655.js"
+    "static/js/main.be85b8a5.js"
   ]
 }
